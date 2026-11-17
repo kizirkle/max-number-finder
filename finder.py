@@ -3,6 +3,7 @@ def findMaxNumber(numList):
     for num in numList:
         if num > maxNum:
             maxNum = num
+    return maxNum
 
 if __name__ == "__main__":
     print("app started")
