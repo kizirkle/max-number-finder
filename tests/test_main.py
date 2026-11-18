@@ -10,9 +10,15 @@ class testMaxNumber(unittest.TestCase):
         self.assertEqual(findMaxNumber([10,11,12,14,13,6,170]), 170)
 
     def test_Max_Number_String(self):
-        self.assertRaises(findMaxNumber("Lalala"), "Object must be an array of numbers.")
+        self.assertRaises(
+            ValueError,
+            findMaxNumber,
+            "Lalala")
 
     def test_Max_Number_String(self):
-        self.assertRaises(findMaxNumber([1,2,"lalala",3]), "All entries in numList must be numbers.")
+        self.assertRaises(
+            ValueError,
+            findMaxNumber,
+            [1, 2, "lalala", 3])
 if __name__ == '__main__':
     unittest.main()
