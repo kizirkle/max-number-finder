@@ -9,5 +9,6 @@ class testMaxNumber(unittest.TestCase):
     def test_Max_Number_Multiple_Digits(self):
         self.assertEqual(findMaxNumber([10,11,12,14,13,6,170]), 170)
 
+
 if __name__ == '__main__':
     unittest.main()
