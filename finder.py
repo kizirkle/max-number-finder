@@ -9,7 +9,6 @@ def findMaxNumber(numList):
             maxNum = num
     return maxNum
 
-
 if __name__ == "__main__":
     print("app started")
     nums = input("Give a List Of Numbers separated by a single comma:")
