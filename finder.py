@@ -4,12 +4,10 @@ def findMaxNumber(numList):
     maxNum = 0
     for num in numList:
         if not isinstance(num, int):
-             return num
-            # raise ValueError("All entries in numList must be numbers.")
+            raise ValueError("All entries in numList must be numbers.")
         if num > maxNum:
             maxNum = num
     return maxNum
-
 
 if __name__ == "__main__":
     print("app started")
