@@ -11,4 +11,9 @@ def findMaxNumber(numList):
 
 if __name__ == "__main__":
     print("app started")
-    print(findMaxNumber([1,2,3,4,5,9,8,7]))
+    nums = input("Give a List Of Numbers separated by a single comma:")
+    arr = nums.split(',')
+    numarr=[]
+    for num in arr:
+         numarr.append(int(num))
+    print(findMaxNumber(numarr))
